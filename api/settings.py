@@ -29,7 +29,8 @@ SECRET_KEY = 'we-i2ly=n4eb@asz%4kc3poht_wnc&57s74nt_nqx%c8go1fl%'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '0.0.0.0'
+    '0.0.0.0',
+    'wine-quality-ml-api.herokuapp.com'
 ]
 
 
