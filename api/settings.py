@@ -29,9 +29,7 @@ SECRET_KEY = 'we-i2ly=n4eb@asz%4kc3poht_wnc&57s74nt_nqx%c8go1fl%'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '0.0.0.0',
-    'wine-quality-ml-api.herokuapp.com',
-    '127.0.0.1'
+    '*'
 ]
 
 
@@ -132,7 +130,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',
-    'https://wine-quality-prediction-app.vercel.app'
-]
+# CORS_ALLOWED_ORIGINS = [
+#     'http://localhost:3000',
+#     'https://wine-quality-prediction-app.vercel.app'
+# ]
+
+CORS_ORIGIN_ALLOW_ALL = True
