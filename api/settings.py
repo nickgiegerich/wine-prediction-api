@@ -30,7 +30,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '0.0.0.0',
-    'wine-quality-ml-api.herokuapp.com'
+    'wine-quality-ml-api.herokuapp.com',
+    '127.0.0.1'
 ]
 
 
