@@ -134,5 +134,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 CORS_ALLOWED_ORIGINS = [
     'localhost:3000',
-    'wine-quality-prediction-app.vercel.app'
+    'https://wine-quality-prediction-app.vercel.app/'
 ]
