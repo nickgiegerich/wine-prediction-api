@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+from .secrets import MY_SECRET_KEY, MY_ALLOWED_HOSTS, MY_DEBUG
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -23,16 +24,12 @@ MODELS = os.path.join(BASE_DIR, 'wineprediction/models')
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'we-i2ly=n4eb@asz%4kc3poht_wnc&57s74nt_nqx%c8go1fl%'
+SECRET_KEY = MY_SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = MY_DEBUG
 
-ALLOWED_HOSTS = [
-    '0.0.0.0',
-    'wine-quality-ml-api.herokuapp.com',
-    '127.0.0.1'
-]
+ALLOWED_HOSTS = MY_ALLOWED_HOSTS
 
 
 # Application definition
